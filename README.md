@@ -1,6 +1,7 @@
 # 👗 The Style Hub – E-Commerce Website
 
 The Style Hub is a fashion e-commerce website developed using HTML, CSS, JavaScript, and Bootstrap 5. It allows users to browse fashion products, filter categories, manage their shopping cart, and perform product management operations.
+![Uploading download.png…]()
 
 ## ✨ Features
 
