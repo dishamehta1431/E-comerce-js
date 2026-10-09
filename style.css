@@ -1,0 +1,479 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+}
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.product-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.btn-card {
+  border: none;
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.btn-card:hover {
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  color: white;
+}
+.nav-link {
+  color: #020024;
+}
+.home-link {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-link:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-search {
+  border: none;
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+}
+
+.btn-search:hover {
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  color: white;
+}
+
+.cartProductImage {
+  width: 90px;
+  object-fit: cover;
+}
+
+.modal-dialog {
+  max-width: 900px;
+}
+
+.btn-remove {
+  border: none;
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+}
+
+.quantity-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.quantity-box span {
+  min-width: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-cart-table1,
+.btn-cart-table2 {
+  width: 35px;
+  height: 35px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.btn-cart-table1:hover,
+.btn-cart-table2:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  color: white;
+}
+
+.btn-close-cart {
+  border: none;
+  color: white;
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+.btn-close-cart:hover {
+  color: white;
+  background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+}
+
+.btn-checkout {
+  border: none;
+  color: white;
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+
+.btn-checkout:hover {
+  color: white;
+  background: linear-gradient(90deg, #00d4ff 0%, #090979 35%, #020024 100%);
+}
+
+.btn-update {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-update:hover {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: white;
+  transform: translateY(-2px);
+}
+.btn-card {
+  border: none;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.btn-card:hover,
+.btn-card:focus,
+.btn-card:active {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+/* About Us Section */
+.about-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9ff, #eef7ff);
+  overflow: hidden;
+}
+
+.about-image {
+  position: relative;
+  padding: 12px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(2, 0, 36, 1),
+    rgba(9, 9, 121, 1),
+    rgba(0, 212, 255, 1)
+  );
+  box-shadow: 0 15px 35px rgba(9, 9, 121, 0.18);
+}
+
+.about-image img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+}
+
+.about-badge {
+  position: absolute;
+  right: -10px;
+  bottom: 30px;
+  padding: 18px 25px;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgba(2, 0, 36, 1),
+    rgba(9, 9, 121, 1),
+    rgba(0, 212, 255, 1)
+  );
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-badge h3 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-badge p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.about-content {
+  padding: 10px;
+}
+
+.about-tag {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #090979;
+  background: #dfeaff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.about-content h2 {
+  margin-bottom: 20px;
+  color: #020024;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.about-content h2 span {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1),
+    rgba(9, 9, 121, 1),
+    rgba(0, 212, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-content > p {
+  margin-bottom: 15px;
+  color: #606070;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-features {
+  margin-top: 25px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 18px;
+  padding: 15px;
+  border: 1px solid #e5e9f5;
+  border-radius: 12px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+.about-feature:hover {
+  transform: translateX(5px);
+  border-color: #9baeff;
+  box-shadow: 0 6px 18px rgba(9, 9, 121, 0.08);
+}
+
+.about-feature > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgba(2, 0, 36, 1),
+    rgba(9, 9, 121, 1),
+    rgba(0, 212, 255, 1)
+  );
+  font-size: 22px;
+}
+
+.about-feature h5 {
+  margin-bottom: 5px;
+  color: #020024;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.about-feature p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.about-btn {
+  margin-top: 12px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1),
+    rgba(9, 9, 121, 1),
+    rgba(0, 212, 255, 1)
+  );
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(9, 9, 121, 0.2);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1),
+    rgba(9, 9, 121, 1),
+    rgba(2, 0, 36, 1)
+  );
+}
+
+/* Responsive About Us Section */
+@media (max-width: 991px) {
+  .about-section {
+    padding: 55px 0;
+  }
+
+  .about-image img {
+    height: 350px;
+  }
+
+  .about-content h2 {
+    font-size: 30px;
+  }
+
+  .about-badge {
+    right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .about-image img {
+    height: 280px;
+  }
+
+  .about-content {
+    padding: 10px 0;
+  }
+
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-tag {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .about-feature {
+    padding: 12px;
+  }
+
+  .about-badge {
+    bottom: 20px;
+    padding: 12px 18px;
+  }
+
+  .about-badge h3 {
+    font-size: 18px;
+  }
+}
